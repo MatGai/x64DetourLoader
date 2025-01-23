@@ -18,5 +18,16 @@
     <ClCompile Include="entry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pe.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
