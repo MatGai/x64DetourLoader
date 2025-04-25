@@ -24,6 +24,7 @@
     <ProjectGuid>{f362dad3-2fe7-4fd9-8d15-8e0d6ba3fb6a}</ProjectGuid>
     <RootNamespace>x64DetourLoader</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>x64DllLoader</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,11 +129,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp" />
-    <ClCompile Include="pe.cpp" />
+    <ClCompile Include="loadimage.cpp" />
+    <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="nt.h" />
-    <ClInclude Include="pe.h" />
+    <ClInclude Include="loadimage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
